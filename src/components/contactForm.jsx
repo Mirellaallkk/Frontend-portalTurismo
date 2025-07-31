@@ -20,7 +20,7 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-          const response = await axios.post("http://localhost:5000/api/contact", {
+          const response = await axios.post("https://backend-portalturismo-tgpp.onrender.com/api/contact", {
               name: formData.name,
               email: formData.email,
               message: formData.message,
